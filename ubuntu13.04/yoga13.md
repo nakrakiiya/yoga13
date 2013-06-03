@@ -1,4 +1,4 @@
-#Ubuntu 13.04#
+#Ubuntu 13.04 AMD64#
 
 Ubuntu 12.04虽然也能安装，但是触摸板识别会有误（这个问题升级到13.04使用的3.9内核结果也是一样）。
 
@@ -50,6 +50,18 @@ blacklist ideapad_laptop
 ```sh
 echo 2000 | sudo tee /sys/class/backlight/intel_backlight/brightness
 ```
+
+##Intel HD Graphics 4000##
+
+据说这个集成显卡的驱动程序已经在内核里面了。不过，Intel网站提供了对应的更新（不更新也看不出有什么不同呀！）。
+
+1. 到[这里](https://01.org/linuxgraphics/downloads)下载 **Intel(R) Linux* Graphics Installer** 并安装。
+1. 执行对应的安装程序。
+```
+/usr/bin/intel-linux-graphics-installer
+```
+
+1. 重启电脑。
 
 ##一些杂七杂八的软件包##
 
