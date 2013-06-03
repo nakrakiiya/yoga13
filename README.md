@@ -1,0 +1,1 @@
+在lenovo yoga 13里面安装ubuntu的经验。
