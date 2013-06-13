@@ -6,6 +6,15 @@ Ubuntu 12.04虽然也能安装，但是触摸板识别会有误（这个问题�
 
 启动方式选择uefi。安装Ubuntu 13.04，清空整个硬盘（在安装之前请用gparted重建msdos分区表），不要使用lvm。安装过程中启用网络（使用内核能直接识别的外置wifi网卡，直到内置网卡能用为止）。
 
+关于分区表：
+* 有些传统的linux工具不支持gparted分区表，比如，fdisk。不过，gparted支持GPT分区表。但是，预装的Windows 8，使用的是GPT分区表。其实Ubuntu应该也可以直接安装在GPT分区表的。
+ 
+关于磁盘加密：
+* 请 **一定** 要加密主文件夹（安装过程有这个选项）！ *这样当笔记本被偷的时候，也必须要密码才能访问硬盘里面的资料！（这句话待确认）*
+
+关于从光盘引导：
+* 如果启动后第一次打开Boot Menu找不到光驱里面的启动盘，Ctrl+Alt+Del重启一下就能找到了。
+
 ##使用新内核##
 更新内核到起码3.9，使用这个项目：
  * https://github.com/GM-Script-Writer-62850/Ubuntu-Mainline-Kernel-Updater
