@@ -1,0 +1,6 @@
+wifi:
+git clone https://github.com/lwfinger/rtl8723au.git
+
+bluetooth:
+git clone https://github.com/lwfinger/rtl8723au_bt.git
+
